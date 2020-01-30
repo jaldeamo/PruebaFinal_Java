@@ -4,5 +4,5 @@ import org.springframework.context.annotation.ComponentScan;
 import com.example.model.Hist_ventas;
 
 public interface Hist_ventasService {
-	Hist_ventas altaComprador(Hist_ventas h);
+	Hist_ventas altaHist_ventas(Hist_ventas h);
 }

@@ -5,7 +5,7 @@ import com.example.model.Mascotas;
 
 public interface MascotaService {
 	List<Mascotas>listMascotastodas();
-	List<Mascotas>listMascotasttipo();
+	List<Mascotas>listMascotastipo();
 	Mascotas listMascotaunica(int idmascota);
 	Mascotas ventaMascota(int idmascota);
 	Mascotas altaMascota(Mascotas m);

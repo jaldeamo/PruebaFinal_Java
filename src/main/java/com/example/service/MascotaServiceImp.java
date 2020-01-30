@@ -19,7 +19,7 @@ public class MascotaServiceImp implements MascotaService
 	}
 
 	@Override
-	public List<Mascotas> listMascotasttipo() {
+	public List<Mascotas> listMascotastipo() {
 		return repositorio.findAll();
 	}
 
@@ -28,10 +28,14 @@ public class MascotaServiceImp implements MascotaService
 		return repositorio.findById(idmascota);
 	}
 
-	@Override
+	/*
+	 * @Override(non-Javadoc)
+	 * @see com.example.service.MascotaService#ventaMascota(int)
+	
 	public Mascotas ventaMascota(int idmascota) {
 		return repositorio.save(m);
 	}
+	*/
 
 	@Override
 	public Mascotas altaMascota(Mascotas m) {
@@ -41,6 +45,12 @@ public class MascotaServiceImp implements MascotaService
 	@Override
 	public Mascotas modifMascota(int idmascota, Mascotas m) {
 		return repositorio.save(m);
+	}
+
+	@Override
+	public Mascotas ventaMascota(int idmascota) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
